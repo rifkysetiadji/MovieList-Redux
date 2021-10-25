@@ -2,16 +2,16 @@
 
 this application displays a list of movies, you can search it and this app use invinity scroll so it can show next movies while you scroll it, 
 
-.
-├── ...
-├── src                    
+```bash
+├── src
 │   ├── components         # list of reussable component
-│   ├── redux              # all redux file here
-│   ├── services           # configuration file for backend request or spesial/complicated function
-│   ├── Views              # Page you see in the screen
-│   └── ...                # etc.
-└── ...
-
+│   ├── redux
+│   ├── services
+│   ├── Views
+│   ├── store.js
+│   └── ....
+└── ....
+```
 
 ## Available Scripts
 
