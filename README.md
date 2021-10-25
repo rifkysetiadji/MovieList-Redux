@@ -5,11 +5,11 @@ this application displays a list of movies, you can search it and this app use i
 ```bash
 ├── src
 │   ├── components         # list of reussable component
-│   ├── redux
-│   ├── services
-│   ├── Views
-│   ├── store.js
-│   └── ....
+│   ├── redux              # all redux file here
+│   ├── services           # configuration file for backend request or spesial/complicated function
+│   ├── Views              # Page you see in the screen
+│   ├── store.js           # redux store configuration
+│   └── ....               # etc.
 └── ....
 ```
 
