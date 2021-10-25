@@ -1,6 +1,17 @@
-# Getting Started with Create React App
+# Stockbit Frontend Test - Movie List Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+this application displays a list of movies, you can search it and this app use invinity scroll so it can show next movies while you scroll it, 
+
+.
+├── ...
+├── src                    
+│   ├── components         # list of reussable component
+│   ├── redux              # all redux file here
+│   ├── services           # configuration file for backend request or spesial/complicated function
+│   ├── Views              # Page you see in the screen
+│   └── ...                # etc.
+└── ...
+
 
 ## Available Scripts
 
