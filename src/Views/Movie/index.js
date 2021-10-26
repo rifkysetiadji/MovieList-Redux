@@ -28,6 +28,8 @@ export default function Index() {
         dispatch(getMovie(`&s=${value!==''?value:'batman'}&page=${1}`,true))
     },1000)
     const autoCompleteSearch=(value)=>{
+        setSearch(value)
+
         dispatch(getMovie(`&s=${value!==''?value:'batman'}&page=${1}`,true))
 
     }
