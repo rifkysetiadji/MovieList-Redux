@@ -1,10 +1,12 @@
 import React from 'react'
 import SkeletonLoader from 'components/Loading/skeleton'
+import Search from './Search'
 export default function List(props) {
-    let {movies,searchToggle,isLoadingSkeleton,onClickDetail,onClickPoster}=props
+    let {movies,searchToggle,isLoadingSkeleton,onClickDetail,onClickPoster,autoCompleteSearch}=props
     return (
         <div data-testid="list-container">
-            <input onChange={(e)=>searchToggle(e.target.value)} placeholder="search movie"/>
+            <Search keywords={movies} autoCompleteSearch={autoCompleteSearch}/>
+            {/* <input onChange={(e)=>searchToggle(e.target.value)} placeholder="search movie"/> */}
             <br/><br/>
             {isLoadingSkeleton&&<SkeletonLoader/>}
             {movies.map((d,i)=>(

@@ -27,6 +27,10 @@ export default function Index() {
         setSearch(value)
         dispatch(getMovie(`&s=${value!==''?value:'batman'}&page=${1}`,true))
     },1000)
+    const autoCompleteSearch=(value)=>{
+        dispatch(getMovie(`&s=${value!==''?value:'batman'}&page=${1}`,true))
+
+    }
     const tabToggle=(key)=> settab(key)
     const onClickDetail=async (id)=>{
         let res=await dispatch(getDetailMovie(`&i=${id}`))
@@ -45,7 +49,7 @@ export default function Index() {
     }
     return (
         <div data-testid="movie-container" className='movie-container'>
-            {tab==="list"&&<List   searchToggle={searchToggle} isLoadingSkeleton={general.isLoadingSkeleton} movies={movie.movie_list} tabToggle={tabToggle} onClickDetail={onClickDetail} onClickPoster={onClickPoster}/>}
+            {tab==="list"&&<List autoCompleteSearch={autoCompleteSearch}   searchToggle={searchToggle} isLoadingSkeleton={general.isLoadingSkeleton} movies={movie.movie_list} tabToggle={tabToggle} onClickDetail={onClickDetail} onClickPoster={onClickPoster}/>}
             <div ref={ref}></div>
             {tab==="detail"&&<Detail movie_detail={movie.movie_detail} tabToggle={tabToggle}/>}
         </div>
