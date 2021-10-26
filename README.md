@@ -14,7 +14,7 @@ this application displays a list of movies, you can search it and this app use i
 ```
 
 ## Available Scripts
-
+Make sure you run `yarn install` first before you run the project.\
 In the project directory, you can run:
 
 ### `yarn start`
