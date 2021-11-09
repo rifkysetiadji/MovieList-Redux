@@ -1,4 +1,4 @@
-# Stockbit Frontend Test - Movie List Application
+# Movie List Application
 
 this application displays a list of movies, you can search it and this app use invinity scroll so it can show next movies while you scroll it, 
 
